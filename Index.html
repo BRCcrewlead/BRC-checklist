@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>BRC Painting Daily Checklist</title>
+    <link rel="manifest" href="manifest.json">
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js');
+      }
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f5f2;
+            padding: 20px;
+            color: #2e2e2e;
+        }
+        h2 {
+            background: #4d3a2f;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .checklist-section {
+            margin-bottom: 30px;
+        }
+        .item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            background: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .item input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>BRC Painting Daily Checklist</h1>
+    <h2>🌅 BEFORE YOU ROLL (6:30 – 8:00 AM)</h2>
+    <div class="checklist-section">
+        <div class="item"><input type="checkbox">Check today's job site(s) & crew assignments</div>
+        <div class="item"><input type="checkbox">Review scope of work for each site</div>
+        <div class="item"><input type="checkbox">Confirm materials/tools loaded</div>
+        <div class="item"><input type="checkbox">Quick weather check</div>
+        <div class="item"><input type="checkbox">Client text/call update</div>
+        <div class="item"><input type="checkbox">Crew pep talk</div>
+    </div>
+    <h2>🧱 ON SITE STARTUP (8:00 – 9:00 AM)</h2>
+    <div class="checklist-section">
+        <div class="item"><input type="checkbox">Walkthrough: note problem spots</div>
+        <div class="item"><input type="checkbox">Assign roles</div>
+        <div class="item"><input type="checkbox">Check surfaces</div>
+        <div class="item"><input type="checkbox">Confirm paint types & colors</div>
+        <div class="item"><input type="checkbox">Setup protection</div>
+    </div>
+    <h2>⚙️ MIDDAY CHECKPOINT (12:00 – 1:00 PM)</h2>
+    <div class="checklist-section">
+        <div class="item"><input type="checkbox">Are we on pace?</div>
+        <div class="item"><input type="checkbox">What’s done? What’s lagging?</div>
+        <div class="item"><input type="checkbox">Any issues?</div>
+        <div class="item"><input type="checkbox">Break time reminder</div>
+        <div class="item"><input type="checkbox">Supply check</div>
+    </div>
+    <h2>📸 DOCUMENT & COMMUNICATE (1:00 – 2:30 PM)</h2>
+    <div class="checklist-section">
+        <div class="item"><input type="checkbox">Take photos of progress</div>
+        <div class="item"><input type="checkbox">Text/call client with update</div>
+        <div class="item"><input type="checkbox">Add notes for changes</div>
+        <div class="item"><input type="checkbox">Plan tomorrow's job</div>
+    </div>
+    <h2>🧽 END OF DAY WRAP-UP (4:00 – 5:30 PM)</h2>
+    <div class="checklist-section">
+        <div class="item"><input type="checkbox">Final site walkthrough</div>
+        <div class="item"><input type="checkbox">Clean tools & buckets</div>
+        <div class="item"><input type="checkbox">Label/store materials</div>
+        <div class="item"><input type="checkbox">Trash out</div>
+        <div class="item"><input type="checkbox">Crew check-in</div>
+        <div class="item"><input type="checkbox">Client update</div>
+        <div class="item"><input type="checkbox">Clock out time & mileage</div>
+    </div>
+    <h2>🧠 WEEKLY (FRIDAY OR SATURDAY)</h2>
+    <div class="checklist-section">
+        <div class="item"><input type="checkbox">Invoice check</div>
+        <div class="item"><input type="checkbox">Material restock</div>
+        <div class="item"><input type="checkbox">Review crew performance</div>
+        <div class="item"><input type="checkbox">Post content</div>
+        <div class="item"><input type="checkbox">Plan next week</div>
+    </div>
+    <div class="footer">
+        Built for BRC Painting — Crafting with color and precision.
+    </div>
+</body>
+</html>
